@@ -10,11 +10,19 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: white;
+h2, h3, h4, h5, h6 {
+  color: rgba(84, 84, 84, 1);
 }
 
 p {
-  color: rgba(205, 205, 205, 1);
+  color: rgba(76, 76, 76, 1);
 }
 
+h1 {
+  color: white;
+}
+
+header nav,
+header section p {
+  color: rgba(205, 205, 205, 1);
+}
