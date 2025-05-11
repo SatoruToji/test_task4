@@ -13,6 +13,8 @@ import "./styles/block/main/pet.scss";
 
 import "./styles/block/main/help.scss";
 
+import "./styles/block/main/donate.scss";
+
 const mobileBtn = window.matchMedia("(max-width: 500px)");
 
 // mobile button, hidden nav links

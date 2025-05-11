@@ -1,0 +1,43 @@
+.donation {
+  display: flex;
+  justify-content: end;
+  height: 70vh;
+  background: 
+    url('/public/images/donation/donation-dog.png') no-repeat,
+    rgba(246, 246, 246, 1);
+  background-position: 27% center;
+  &__card {
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // display: grid;
+    margin-top: 80px;
+    margin-right: 18%;
+    gap: 20px;
+    // width: 27%;
+    width: 380px;
+
+    &--button {
+      padding-inline: 60px 20px;
+      font-size: 20px;
+      border-radius: 9px;
+    }
+
+    &--warning {
+      display: block;
+      color: rgba(178, 178, 178, 1);
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .donation {
+    height: 100vh;
+    background-position: center 50vh;
+    &__card {
+      
+    }
+  }
+}
