@@ -52,6 +52,8 @@ module.exports = (env) => ({
   devServer: {
     watchFiles: [`${SOURCE}/**/*.ejs`],
     port: 2025,
+    host: '0.0.0.0',
+    allowedHosts: 'all',
     open: true,
     hot: true,
   },
