@@ -1,34 +1,29 @@
 .pet{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
   text-align: center;
-  row-gap: 60px;
+  padding-block: 10px;
   width: 100vw;
   height: 100vh;
   background-color: rgba(246, 246, 246, 1);
-  &__title {
-    margin-top: 40px;
-    font-size: 35px;
-  }
   &__slider {
     display: flex;
     text-align: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    margin-inline: auto;
+    margin: auto;
     width: 70vw;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 9px;
-    
   }
   &__slide {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     row-gap: 10px;
     min-width: 70vw;
-    // min-height: 70vh;
+    height: 400px;
     scroll-snap-align: start;
+    &--title {
+      font-size: 20px;
+    }
     &--button {
       margin-inline: auto;
       margin-bottom: 25px;

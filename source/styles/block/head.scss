@@ -17,7 +17,7 @@
     top: 50%;
     left: 5%;
     row-gap: 45px;
-    width: 460px; 
+    // width: 460px; 
 
     &--title {
       font-size: 44px;
@@ -36,8 +36,12 @@
     &__card {
       top: 20%;
       left: 0;
-      transform: translateX(30%);
-      width: 60%;
+      margin-inline: auto;
+      text-align: center;
+      padding-inline: 20px;
+      &--title {
+        font-size: 35px;
+      }
       &--button {
         margin-inline: auto;
       }
