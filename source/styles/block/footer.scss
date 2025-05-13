@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 3%;
+  column-gap: 12%;
+  height: 350px;
+  background:
+    url('/public/images/footer/footer-puppy.png') no-repeat 95% bottom,
+    linear-gradient(90deg, rgba(81, 61, 47, 1) 0%, rgba(26, 26, 28, 1) 69%);
+  &__title {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 35px;
+  }
+  &__section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    &--link {
+      color: rgba(241, 205, 179, 1);
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    align-items: start;
+    column-gap: 1%;
+    height: 600px;
+    background-position: center bottom;
+    &__block {
+      margin-inline: auto;
+      height: 200px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .footer {
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0%;
+    row-gap: 40px;
+    height: 900px;
+  }
+}

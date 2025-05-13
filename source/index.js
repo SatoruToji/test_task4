@@ -15,6 +15,8 @@ import "./styles/block/main/help.scss";
 
 import "./styles/block/main/donate.scss";
 
+import "./styles/block/footer.scss";
+
 const mobileBtn = window.matchMedia("(max-width: 500px)");
 
 // mobile button, hidden nav links
