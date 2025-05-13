@@ -7,15 +7,12 @@
     rgba(246, 246, 246, 1);
   background-position: 27% center;
   &__card {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
-    // display: grid;
+    display: grid;
     margin-top: 80px;
     margin-right: 18%;
-    gap: 20px;
-    // width: 27%;
+    row-gap: 20px;
     width: 380px;
+    height: 280px ;
 
     &--button {
       padding-inline: 60px 20px;
@@ -32,12 +29,39 @@
   }
 }
 
+@media (max-width: 1360px) {
+  .donation__card--warning {
+    color: black;
+  }
+}
+
 @media (max-width: 768px) {
   .donation {
-    height: 100vh;
-    background-position: center 50vh;
+    height: 90vh;
+    background-position: bottom;
     &__card {
-      
+      margin-left: 18%;
+      &--warning {
+        color: rgba(178, 178, 178, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .donation {
+    height: 88vh;
+    background-size: 90%;
+    &__card {
+      margin-inline: auto;
+      text-align: center;
+      &--title {
+        text-align: center;
+      }
+      &--button {
+        margin-inline: auto;
+        font-size: 15px;
+      }
     }
   }
 }
